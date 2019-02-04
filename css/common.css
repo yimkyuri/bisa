@@ -1,0 +1,75 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+/*common*/
+* {margin:0; padding:0;}
+html {width:100%;}
+body {font-size:14px; color:#626262;  font-family: 'Noto Sans KR', sans-serif;} /*보통 폰트를 body에 기준으로 잡아주고 다른곳에 em으로 사용한다.*/
+input,textarea,select,option,button,th,td {font-size:14px;} /*body안에 있지만 body의 속성을 이어받지 않는 브라우저도 있다. 그래서 따로 더 넣어준다*/
+ol, li {list-style:none;}
+legend,caption {display:none;}
+address, em {font-style:normal;}
+img, fieldset, iframe {border:0;} /*브라우저별로 다르게 사용되므로.. 둘을 다 쓴다.. none은 iframe때문에 사용*/
+img, input {vertical-align:middle;} /* 이미지, 인풋, 텍스트가 한줄에 쓰여질때, 위치 정렬에 필요*/
+table {border-collapse:collapse; border-spacing:0;} /* 셀의 테두리선을 겹쳐서 표시 : 테이블 셀 요소의 테두리 간격을 지정*/
+hr {display:none;}
+a {margin:0; padding:0; text-decoration: none; color:inherit;}
+button {border:0; background:none; vertical-align: middle; cursor: pointer; outline:none;}
+input {border:0; outline:0;}
+input[type="submit"] {border:0; cursor: pointer;}
+
+.fl {float:left;}
+.fr {float:right;}
+.cb {clear:both;}
+.oh {overflow: hidden;}
+.va-top {vertical-align: top;}
+.ml0 {margin-left:0 !important;}
+.mt20 {margin-top:20px;}
+.mt30 {margin-top:30px;}
+
+/*layout*/
+#wrap {position:relative; min-width:1500px;}
+header {width:100%; height:900px; background:url(../images/main_bg.jpg) no-repeat 50% 50%;}
+h1 {width:95%; margin: 0 auto; padding-top:50px}
+nav {position:relative; height:110px; background-color:#535353;}
+nav ul {width:95%; margin:0 auto; }
+nav li {float:left; color:#fff; font-weight:bold; font-size:25px; text-align:center; border-right:1px solid #aaa;}
+nav li a {display:inline-block; width:350px; height:110px; line-height:110px;}
+nav li:first-child {border-left:1px solid #aaa; border-right:1px solid #aaa;}
+nav li:hover {background-color:#3d3d3d;}
+nav li.on {background-color:#3d3d3d;}
+
+#contents {padding:50px 0;}
+
+/* 역대응원단원 */
+table.member {width:95%; margin:0 auto;}
+table.member td, table.member th {border-top:2px solid #a0a0a0; padding:25px 0;}
+table.member td.first, table.member th.first {border:0}
+table.member th {width:150px; font-size:30px; text-align:center;}
+table.member td div {position: relative; float:left; width:220px; height: 70px; margin:10px 10px 10px 0; padding:10px}
+table.member td div.in {background:url(../images/bg_green.png) no-repeat}
+table.member td div.out {background:url(../images/bg_gray.png) no-repeat}
+table.member td div.fresh {background:url(../images/bg_fresh.png) no-repeat}
+table.member td div img {float:left;}
+table.member td div p {float:left; color:#fff; width:139px; font-size:16px; text-align:center; letter-spacing: -1px}
+table.member td div p.name {font-size:20px; padding-top:5px}
+table.member td div span {position: absolute; width:88px; height:22px; background:url(../images/bg_leader.png) no-repeat; color:#fff; text-align:center; right:45px; top:-10px;}
+
+/* 응원단 액션곡 */
+ul.music {width:500px; margin:0 auto;}
+ul.music li {float:left; margin-bottom:50px;}
+ul.music li a {display:inline-block; font-size: 30px; width:250px; height:100px; line-height:100px; text-align:center;}
+ul.music li a:hover {color:#164194; text-decoration:overline; font-weight:bold}
+ul.music li.on a  {color:#164194; text-decoration:overline; font-weight:bold}
+
+table.musiclist {width:95%; margin:0 auto;}
+table.musiclist th {border-top:2px solid #a0a0a0; border-bottom:1px solid #a0a0a0; background-color: #ebebeb; font-size: 20px; padding:25px 0;}
+table.musiclist td {border-bottom:1px solid #a0a0a0; font-size: 20px; padding:20px 0; text-align: center;}
+table.musiclist td.songname {color:#000; font-size:22px;}
+table.musiclist tr:hover {background-color:#eefaff;}
+
+/* 푸터 */
+footer {width:100%; height: 80px; color:#fff; font-size: 18px; background-color:#535353; padding:60px 0; margin-top:50px;}
+div.footer {width:95%; margin: 0 auto;}
+div.footer p.logo {float: left; width:350px}
+div.footer div.add {float: left;}
