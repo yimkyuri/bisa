@@ -45,14 +45,14 @@ h1 {width:95%; margin: 0 auto; padding-top:50px}
 table.member {width:95%; margin:100px auto;}
 table.member td, table.member th {border-top:2px solid #a0a0a0; padding:25px 0;}
 table.member td.first, table.member th.first {border:0}
-table.member th {width:150px; font-size:30px; text-align:center;}
+table.member th {width:180px; font-size:30px; text-align:center;}
 table.member td div {position: relative; float:left; width:220px; height: 70px; margin:10px 10px 10px 0; padding:10px}
 table.member td div.in {background:url(../images/bg_green.png) no-repeat}
 table.member td div.out {background:url(../images/bg_gray.png) no-repeat}
 table.member td div.fresh {background:url(../images/bg_fresh.png) no-repeat}
 table.member td div img {float:left;}
 table.member td div p {float:left; color:#fff; width:139px; font-size:16px; text-align:center; letter-spacing: -1px}
-table.member td div p.name {font-size:20px; padding-top:5px}
+table.member td div p.name {font-size:20px; padding-top:10px}
 table.member td div span {position: absolute; width:88px; height:22px; background:url(../images/bg_leader.png) no-repeat; color:#fff; text-align:center; right:45px; top:-10px;}
 
 /* 응원단 액션곡 */
