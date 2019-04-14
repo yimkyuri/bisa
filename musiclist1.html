@@ -6,11 +6,25 @@
  <link rel="stylesheet" href="css/common.css">
  <script src="js/jquery-3.2.1.min.js"></script>
  <script src="js/common.js"></script>
-</head>
+ <style>
+ #mask {position:fixed; z-index:9000; background-color:#000; display:none; left:0; top:0;}
+ .window{display:none; position:fixed; width:1000px; height:640px; background-color:#000; top:50px; left:50%; margin-left:-500px; z-index:9001;}
+ .window > p > a {display:block; background-color:#fff; color:#000; text-align:center; font-size:18px; padding:15px 0;}
+ #player {position:relative; width:1000px; height:640px;}
+ #player iframe { position:relative; width:1000px; height:640px; display:none }
+  dl.movs dd.url { display:none; }
+ </style>
+ </head>
 <body>
+<div id="mask"></div>
+<div class="window">
+    <div id="player"><iframe src="" frameborder="0" allowfullscreen="true" style="display: inline;"></iframe></div>
+    <p><a href="#" class="close">닫기 X</a></p>
+</div>
 
 <!-- wrap -->
 <div id="wrap">
+
   <div id="header">
     <h1><img src="images/logo.png" alt="계명대학교 비사응원단"></h1>
   </div>
@@ -59,56 +73,96 @@
           <td class="songname">Holding out for a hero(히어로)</td>
           <td>Bonnie Tyler</td>
           <td><img src="images/ico_down_off.png" alt="다운로드"></td>
-          <td><a href="https://youtu.be/1ZvQ5N2M4tc" target="_blank"><img src="images/ico_movie.png" alt="액션영상"><a></td>
+          <td>
+            <dl class="movs">
+                <dt><a href="#" class="openMask"><img src="images/ico_movie.png" alt="액션영상"></a></dt>
+                <dd class="url"><iframe src="http://www.youtube.com/embed/1ZvQ5N2M4tc?rel=0"></iframe></dd>
+            </dl>
+          </td>
         </tr>
         <tr>
           <td>2</td>
           <td class="songname">Road</td>
           <td>가이즈</td>
           <td><img src="images/ico_down_off.png" alt="다운로드"></td>
-          <td><a href="https://youtu.be/X-qnRXmo0b0" target="_blank"><img src="images/ico_movie.png" alt="액션영상"></a></td>
+          <td>
+            <dl class="movs">
+                <dt><a href="#" class="openMask"><img src="images/ico_movie.png" alt="액션영상"></a></dt>
+                <dd class="url"><iframe src="http://www.youtube.com/embed/X-qnRXmo0b0?rel=0"></iframe></dd>
+            </dl>
+          </td>
         </tr>
         <tr>
           <td>3</td>
           <td class="songname">Summer time</td>
           <td>포지션</td>
           <td><img src="images/ico_down_off.png" alt="다운로드"></td>
-          <td><a href="https://youtu.be/SF04aq37RBQ" target="_blank"><img src="images/ico_movie.png" alt="액션영상"></a></td>
+          <td>
+            <dl class="movs">
+                <dt><a href="#" class="openMask"><img src="images/ico_movie.png" alt="액션영상"></a></dt>
+                <dd class="url"><iframe src="http://www.youtube.com/embed/SF04aq37RBQ?rel=0"></iframe></dd>
+            </dl>
+          </td>
         </tr>
         <tr>
           <td>4</td>
           <td class="songname">Victory</td>
           <td>빅마마</td>
           <td><a href="mp3/victory.zip" target="_blank"><img src="images/ico_down.png" alt="다운로드"></a></td>
-          <td><a href="https://youtu.be/hyUu8zn0rLE" target="_blank"><img src="images/ico_movie.png" alt="액션영상"></a></td>
+          <td>
+            <dl class="movs">
+                <dt><a href="#" class="openMask"><img src="images/ico_movie.png" alt="액션영상"></a></dt>
+                <dd class="url"><iframe src="http://www.youtube.com/embed/hyUu8zn0rLE?rel=0"></iframe></dd>
+            </dl>
+          </td>
         </tr>
         <tr>
           <td>5</td>
           <td class="songname">거침없는 사랑</td>
           <td>서문탁</td>
           <td><img src="images/ico_down_off.png" alt="다운로드"></td>
-          <td><a href="https://youtu.be/BegbC1-O-Yw" target="_blank"><img src="images/ico_movie.png" alt="액션영상"></a></td>
+          <td>
+            <dl class="movs">
+                <dt><a href="#" class="openMask"><img src="images/ico_movie.png" alt="액션영상"></a></dt>
+                <dd class="url"><iframe src="http://www.youtube.com/embed/BegbC1-O-Yw?rel=0"></iframe></dd>
+            </dl>
+          </td>
         </tr>
         <tr>
           <td>6</td>
           <td class="songname">그대에게</td>
           <td>넥스트</td>
           <td><img src="images/ico_down_off.png" alt="다운로드"></td>
-          <td><a href="https://youtu.be/Rahk9i17xVQ" target="_blank"><img src="images/ico_movie.png" alt="액션영상"></a></td>
+          <td>
+            <dl class="movs">
+                <dt><a href="#" class="openMask"><img src="images/ico_movie.png" alt="액션영상"></a></dt>
+                <dd class="url"><iframe src="http://www.youtube.com/embed/Rahk9i17xVQ?rel=0"></iframe></dd>
+            </dl>
+          </td>
         </tr>
         <tr>
           <td>7</td>
-          <td class="songname">나는너좋아</td>
+          <td class="songname">나는 너좋아</td>
           <td>엠씨더맥스</td>
           <td><img src="images/ico_down_off.png" alt="다운로드"></td>
-          <td><a href="https://youtu.be/fq9zcV1VBp8" target="_blank"><img src="images/ico_movie.png" alt="액션영상"></a></td>
+          <td>
+            <dl class="movs">
+                <dt><a href="#" class="openMask"><img src="images/ico_movie.png" alt="액션영상"></a></dt>
+                <dd class="url"><iframe src="http://www.youtube.com/embed/fq9zcV1VBp8?rel=0"></iframe></dd>
+            </dl>
+          </td>
         </tr>
         <tr>
           <td>8</td>
           <td class="songname">내게 남은 사랑을 다 줄게</td>
           <td>왁스</td>
           <td><a href="mp3/wax_nehenameun.zip" target="_blank"><img src="images/ico_down.png" alt="다운로드"></a></td>
-          <td><a href="https://youtu.be/j2owFsOiPu8" target="_blank"><img src="images/ico_movie.png" alt="액션영상"></a></td>
+          <td>
+            <dl class="movs">
+                <dt><a href="#" class="openMask"><img src="images/ico_movie.png" alt="액션영상"></a></dt>
+                <dd class="url"><iframe src="http://www.youtube.com/embed/j2owFsOiPu8?rel=0"></iframe></dd>
+            </dl>
+          </td>
         </tr>
         <tr>
           <td>9</td>
@@ -122,7 +176,12 @@
           <td class="songname">맨발의 청춘</td>
           <td>캔</td>
           <td><img src="images/ico_down_off.png" alt="다운로드"></td>
-          <td><a href="https://youtu.be/CIXwDXiyDYk" target="_blank"><img src="images/ico_movie.png" alt="액션영상"></a></td>
+          <td>
+            <dl class="movs">
+                <dt><a href="#" class="openMask"><img src="images/ico_movie.png" alt="액션영상"></a></dt>
+                <dd class="url"><iframe src="http://www.youtube.com/embed/CIXwDXiyDYk?rel=0"></iframe></dd>
+            </dl>
+          </td>
         </tr>
         <tr>
           <td>11</td>
@@ -143,7 +202,12 @@
           <td class="songname">불티</td>
           <td>전영록</td>
           <td><img src="images/ico_down_off.png" alt="다운로드"></td>
-          <td><a href="https://youtu.be/ip2yVHixGXk" target="_blank"><img src="images/ico_movie.png" alt="액션영상"></a></td>
+          <td>
+            <dl class="movs">
+                <dt><a href="#" class="openMask"><img src="images/ico_movie.png" alt="액션영상"></a></dt>
+                <dd class="url"><iframe src="http://www.youtube.com/embed/ip2yVHixGXk?rel=0"></iframe></dd>
+            </dl>
+          </td>
         </tr>
         <tr>
           <td>14</td>
@@ -157,28 +221,48 @@
           <td class="songname">스마일보이</td>
           <td>이승기</td>
           <td><img src="images/ico_down_off.png" alt="다운로드"></td>
-          <td><a href="https://youtu.be/DaqpINT9osg?t=160" target="_blank"><img src="images/ico_movie.png" alt="액션영상"></a></td>
+          <td>
+            <dl class="movs">
+                <dt><a href="#" class="openMask"><img src="images/ico_movie.png" alt="액션영상"></a></dt>
+                <dd class="url"><iframe src="http://www.youtube.com/embed/DaqpINT9osg?t=160?rel=0"></iframe></dd>
+            </dl>
+          </td>
         </tr>
         <tr>
           <td>16</td>
           <td class="songname">스키장에서</td>
           <td>터보</td>
           <td><img src="images/ico_down_off.png" alt="다운로드"></td>
-          <td><a href="https://youtu.be/7ENqEzRu8lo" target="_blank"><img src="images/ico_movie.png" alt="액션영상"></a></td>
+          <td>
+            <dl class="movs">
+                <dt><a href="#" class="openMask"><img src="images/ico_movie.png" alt="액션영상"></a></dt>
+                <dd class="url"><iframe src="http://www.youtube.com/embed/7ENqEzRu8lo?rel=0"></iframe></dd>
+            </dl>
+          </td>
         </tr>
         <tr>
           <td>17</td>
           <td class="songname">이제는</td>
           <td>서울패밀리</td>
           <td><img src="images/ico_down_off.png" alt="다운로드"></td>
-          <td><a href="https://youtu.be/3tZbKXshXos" target="_blank"><img src="images/ico_movie.png" alt="액션영상"></a></td>
+          <td>
+            <dl class="movs">
+                <dt><a href="#" class="openMask"><img src="images/ico_movie.png" alt="액션영상"></a></dt>
+                <dd class="url"><iframe src="http://www.youtube.com/embed/3tZbKXshXos?rel=0"></iframe></dd>
+            </dl>
+          </td>
         </tr>
         <tr>
           <td>18</td>
           <td class="songname">있잖아</td>
-          <td>엠씨더맥스</td>
+          <td>아이유</td>
           <td><img src="images/ico_down_off.png" alt="다운로드"></td>
-          <td><a href="https://youtu.be/GSHS833iM24" target="_blank"><img src="images/ico_movie.png" alt="액션영상"></a></td>
+          <td>
+            <dl class="movs">
+                <dt><a href="#" class="openMask"><img src="images/ico_movie.png" alt="액션영상"></a></dt>
+                <dd class="url"><iframe src="http://www.youtube.com/embed/GSHS833iM24?rel=0"></iframe></dd>
+            </dl>
+          </td>
         </tr>
         <tr>
           <td>19</td>
@@ -220,7 +304,12 @@
           <td class="songname">풍선</td>
           <td>동방신기</td>
           <td><img src="images/ico_down_off.png" alt="다운로드"></td>
-          <td><a href="https://youtu.be/I06uKKViRiQ" target="_blank"><img src="images/ico_movie.png" alt="액션영상"></a></td>
+          <td>
+            <dl class="movs">
+                <dt><a href="#" class="openMask"><img src="images/ico_movie.png" alt="액션영상"></a></dt>
+                <dd class="url"><iframe src="http://www.youtube.com/embed/I06uKKViRiQ?rel=0"></iframe></dd>
+            </dl>
+          </td>
         </tr>
         <tr>
           <td>25</td>
